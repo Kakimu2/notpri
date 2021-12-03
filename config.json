@@ -1,0 +1,102 @@
+{
+    "bot": {
+        "token": "OTE1ODMzMTU2Mjk1MzMxODcx.YahWFw.n8R4gKzsDAV1qE7YdMuuRBrn87s",
+        "presence": {
+            "status": "online",
+            "activity_type": "playing",
+            "activity_text": "PGDPS"
+        },
+        "enabled_intents": 4619
+    },
+    "i18n": {
+        "default_locale": "en",
+        "supported_locales": ["en", "fr-FR", "ru-RU", "it-IT", "de-DE", "cs-CZ", "es-ES", "tr-TR"]
+    },
+    "interaction": {},
+    "mongodb": {
+        "database_name": "ultimategdbot",
+        "connection_string" : "mongodb://localhost:27017"
+    },
+    "ultimategdbot": {
+        "pagination_max_entries": 30,
+        "emoji_guild_ids": [843098900524695562, 916151776418365501],
+        "command_cooldown": {
+            "limit": 2,
+            "interval_seconds": 30
+        },
+        "command_permissions": [],
+        "gd": {
+            "client": {
+                "username": "Botacc",
+                "password": "botacc",
+                "host": "http://ps.fhgdps.com/phazongdpsss/database",
+                "cache_ttl_seconds": 3600,
+                "request_timeout_seconds": 120,
+                "request_limiter": {
+                    "limit": 10,
+                    "interval_seconds": 60
+                }
+            },
+            "events": {
+                "event_loop_interval_seconds": 60,
+                "rates_channel_ids": [],
+                "demons_channel_ids": [],
+                "timely_channel_id": null,
+                "mods_channel_id": null,
+                "crosspost": false,
+                "public_random_messages": {
+                    "rates": [
+                        "A new level has just been rated on PGDPS!!!"
+                    ],
+                    "unrates": [
+                        "This level just got un-rated from PGDPS..."
+                    ],
+                    "daily": [
+                        "There is a new Daily level on PGDPS!!!"
+                    ],
+                    "weekly": [
+                        "There is a new Weekly demon on PGDPS!!!"
+                    ],
+                    "mod": [
+                        "A user has been promoted to PGDPS moderator!"
+                    ],
+                    "elder_mod": [
+                        "A user has been promoted to PGDPS Elder moderator!"
+                    ],
+                    "unmod": [
+                        "A user has been demoted from PGDPS moderator..."
+                    ],
+                    "elder_unmod": [
+                        "A user has been demoted from PGDPS Elder moderator..."
+                    ]
+                },
+                "dm_random_messages": {
+                    "rates": [
+                        "Congratulations for getting your level rated!"
+                    ],
+                    "unrates": [
+                        "Your level has been un-rated..."
+                    ],
+                    "daily": [
+                        "Congratulations for getting the Daily level!"
+                    ],
+                    "weekly": [
+                        "Congratulations for getting the Weekly demon!"
+                    ],
+                    "mod": [
+                        "Congratulations! You have been promoted to PGDPS moderator!"
+                    ],
+                    "elder_mod": [
+                        "Congratulations! You have been promoted to PGDPS Elder moderator!"
+                    ],
+                    "unmod": [
+                        "Oh snap! You have been demoted from PGDPS moderator..."
+                    ],
+                    "elder_unmod": [
+                        "Oh snap! You have been demoted from PGDPS Elder moderator..."
+                    ]
+                }
+            }
+        }
+    }
+}
